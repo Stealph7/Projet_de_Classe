@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Notre Histoire</title>
+        <link rel="stylesheet" href="">
+
+        <style>
+             /* Styles globaux pour le fond et la marge */
+        * {
+            background-color: antiquewhite;
+            
+        }
+        
+        /* Style pour l'en-tête */
+        header {
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid black; 
+            border-radius: 0px  0px 12px 12px;
+            box-shadow: 0px 4px 8px rgb(53, 39, 39); 
+            padding: 10px;
+            padding-bottom:10px ;
+            position: sticky;
+            top: 0px;
+            
+        }
+
+        header nav ul li a {
+
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* Style pour la navigation dans l'en-tête */
+        header nav ul {
+            display: flex;
+            align-items: center;
+            margin-right: 500px;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+
+        /* Style pour les éléments de la liste de navigation */
+        header nav ul li {
+            margin-right: 50px;
+            list-style: none;
+            text-align: center;
+            text-decoration: none;
+            color:rgb(15, 15, 15);
+            
+        }
+
+        /* Style pour les éléments déroulants */
+        .elements_deroulant {
+            display: none;
+            position: relative;
+            
+            padding-top: 40px;
+            z-index: 1;
+        }
+
+        /* Style pour les liens dans les éléments déroulants */
+        .elements_deroulant a {
+            display: block;
+            text-decoration: none;
+            color: rgb(196, 31, 31);
+            align-content: center;
+            background-color: white;
+            text-align: left;
+        }
+
+        /* Afficher les éléments déroulants au survol */
+        .listes_deroulante:hover .elements_deroulant {
+            display: block;
+            position: absolute;
+        }
+
+        footer {
+                text-align: center;
+                background-color: rgb(212, 7, 7);
+                margin-top: 50px;
+                margin-bottom: 0px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Images/logo_pigier.jpg" alt="le logo de Pigier"  height="90px">
+            <nav>
+                <ul>
+                    <li class="listes_deroulante">
+                        <a href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="listes_deroulante">
+                        <span>A propos</span>
+                        <div class="elements_deroulant">
+                            <a href="Notre_histoire.html">Notre histoire</a>
+                            <a href="Notre_equipe.html">Notre équipe</a>
+                            <a href="Nos_diplomes.html">Nos diplômes</a>
+                        </div>
+                    </li>
+                    <li class="listes_deroulante">
+                        <span>Filières</span>
+                        <div class="elements_deroulant">
+                            <a href="">BTS Tourisme et Hôtellerie</a>
+                            <a href="">Licence Professionnelle Comptabilité Finance</a>
+                            <a href="">Licence Professionnelle Réseaux Génie Logiciel</a>
+                            <a href="">Licence Professionnelle Marketing</a>
+                            <a href="">Licence Professionnelle Gestion des Ressources Humaines</a>
+                            <a href="">Master Professionnel Finance Comptabilité</a>
+                            <a href="">Master Professionnel Marketing</a>
+                            <a href="">Master Professionnel Génie Informatique</a>
+                        </div>
+                    </li>
+                    <li class="listes_deroulante">
+                        <span>Admission</span>
+                        <div class="elements_deroulant">
+                            <a href="Nos_Parcourt.html">Nos Parcourts</a>
+                            <a href="Admission.html">Conditions d'admission</a>
+                            <a href="Scolarité.html">Scolarité</a>
+                        </div>
+                    </li>
+                    <li class="listes_deroulante">
+                        <div>Campus</div>
+                        <div class="elements_deroulant">
+                            <a href="campus_Abidjan_Plateau.html">Campus Abidjan-Plateau</a>
+                            <a href="campus_Abidjan_Yopougon.html">Campus Abidjan-Yopougon</a>
+                            <a href="campus_Yamoussoukro.html">Campus Yamoussoukro</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+          <h1>L'histoire de Pigier Côte d'Ivoire</h1>
+          <h2>Bienvenue chez Pigier Côte d'Ivoire</h2>  
+          <section>
+            <p><b>PIGIER COTE D’IVOIRE</b> est une école de formation professionnelle spécialisée en sciences de gestion et en informatique. Elle a été implantée en Côte d’Ivoire depuis 1956 et a su faire évoluer pendant plus d’un demi-siècle son offre de formation, pour répondre aux besoins des entreprises en ressources humaines de niveau de qualification de plus en plus élevé. Progressivement, l’école a abandonné les formations professionnelles aux diplômes d’Etat de niveau inférieur au Baccalauréat au profit des préparations aux diplômes de BTS, Licence et Master.
+            </p>
+            <p><b>Croissance et Expansion</b>
+                Au fil des années, Pigier Côte d'Ivoire a connu une croissance dynamique, élargissant son offre de programmes pour répondre aux besoins du marché professionnel ivoirien. Nos formations, constamment actualisées, sont conçues en étroite collaboration avec les entreprises pour garantir la pertinence des compétences acquises par nos étudiants.
+            </p>
+            <p><b>Notre Engagement envers la Réussite</b>
+                Chez Pigier Côte d'Ivoire, nous croyons en la puissance de l'éducation pour transformer des vies. Notre engagement envers la réussite de nos étudiants se traduit par des programmes académiques rigoureux, des infrastructures modernes, et une équipe pédagogique dévouée.                
+            </p>
+            <p><b>Innovation et Adaptation</b>
+                Dans un monde en constante évolution, Pigier Côte d'Ivoire demeure à la pointe de l'innovation éducative. Nous intégrons les dernières technologies et méthodologies pédagogiques pour préparer nos étudiants à réussir dans des environnements professionnels en mutation.
+            </p>
+            <p><b>Une Communauté Dynamique</b>
+                Notre succès repose également sur la communauté vibrante qui constitue Pigier Côte d'Ivoire. Étudiants, enseignants, anciens élèves et partenaires forment une famille engagée dans la poursuite de l'excellence éducative.
+            </p>
+            <p><b>Ensemble, vers l'avenir</b>
+                Aujourd'hui, fort de notre héritage et de notre engagement envers l'excellence, Pigier Côte d'Ivoire continue de former la prochaine génération de leaders et de professionnels compétents. Rejoignez-nous dans cette aventure éducative et ensemble, construisons un avenir prometteur.
+            </p>
+            <p class="incitation">Pour votre réussite académique et professionnelle rejoignez-nous!
+                <!-- "incitation c-à-d inciter les étudiants à venir s'inscrire chez Nous" -->
+            </p>
+          </section>
+            
+        </main>
+         <!-- Le pied de page de notre site web -->
+    <footer>
+        <div class="footer">
+
+            <!-- la section adresse et contact-->
+            <div class="adresse">
+                <p>Adresse : 123 Rue de l'Éducation, Ville, Pays</p>
+                <p>Téléphone : +123 456 7890 | Email : <a href="" >pigierci@pigier.com</a></p>
+            </div>
+
+            <!-- La section reseaux sociaux du site web -->
+            <div class="reseau_socials">
+                <a href="" target="_blank"><img src="Images/logo_FB.png" alt="logo de Facebook" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_insta.png" alt="logo de Instagram" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_twitter.png" alt="logo de Twitter" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_linkdin.png" alt="logo de LinkedIn" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_tik tok.png" alt="logo de Tik Tok" weight="80px" height="80px"></a>
+            </div>
+            <div>
+                <p>&copy; 2024 Pigier Côte d'Ivoire</p>
+            </div>
+        </div>
+    </footer>
+        
+    </body>
+</html>

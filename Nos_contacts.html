@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+             /* Styles globaux pour le fond et la marge */
+        * {
+            background-color: antiquewhite;
+            
+        }
+        
+        /* Style pour l'en-tête */
+        header {
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid black; 
+            border-radius: 0px  0px 12px 12px;
+            box-shadow: 0px 4px 8px rgb(53, 39, 39); 
+            padding: 10px;
+            padding-bottom:10px ;
+            position: sticky;
+            top: 0px;
+            
+        }
+
+        header nav ul li a {
+
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* Style pour la navigation dans l'en-tête */
+        header nav ul {
+            display: flex;
+            align-items: center;
+            margin-right: 500px;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+
+        /* Style pour les éléments de la liste de navigation */
+        header nav ul li {
+            margin-right: 50px;
+            list-style: none;
+            text-align: center;
+            text-decoration: none;
+            color:rgb(15, 15, 15);
+            
+        }
+
+        /* Style pour les éléments déroulants */
+        .elements_deroulant {
+            display: none;
+            position: relative;
+            
+            padding-top: 40px;
+            z-index: 1;
+        }
+
+        /* Style pour les liens dans les éléments déroulants */
+        .elements_deroulant a {
+            display: block;
+            text-decoration: none;
+            color: rgb(196, 31, 31);
+            align-content: center;
+            background-color: white;
+            text-align: left;
+        }
+
+        /* Afficher les éléments déroulants au survol */
+        .listes_deroulante:hover .elements_deroulant {
+            display: block;
+            position: absolute;
+        }
+
+        footer {
+
+            text-align: center;
+            background-color: rgb(212, 7, 7);
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="Images/logo_pigier.jpg" alt="le logo de Pigier"  height="90px">
+            <nav>
+                <ul>
+                    <li class="listes_deroulante">
+                        <a href="accueil.html">Accueil</a>
+                    </li>
+                    <li class="listes_deroulante">
+                        <span>A propos</span>
+                        <div class="elements_deroulant">
+                            <a href="Notre_histoire.html">Notre histoire</a>
+                            <a href="Notre_equipe.html">Notre équipe</a>
+                            <a href="Nos_diplomes.html">Nos diplômes</a>
+                        </div>
+                    </li>
+                    <li class="listes_deroulante">
+                        <span>Filières</span>
+                        <div class="elements_deroulant">
+                            <a href="">BTS Tourisme et Hôtellerie</a>
+                            <a href="">Licence Professionnelle Comptabilité Finance</a>
+                            <a href="">Licence Professionnelle Réseaux Génie Logiciel</a>
+                            <a href="">Licence Professionnelle Marketing</a>
+                            <a href="">Licence Professionnelle Gestion des Ressources Humaines</a>
+                            <a href="">Master Professionnel Finance Comptabilité</a>
+                            <a href="">Master Professionnel Marketing</a>
+                            <a href="">Master Professionnel Génie Informatique</a>
+                        </div>
+                    </li>
+                    <li class="listes_deroulante">
+                        <span>Admission</span>
+                        <div class="elements_deroulant">
+                            <a href="Nos_Parcourt.html">Nos Parcourts</a>
+                            <a href="Admission.html">Conditions d'admission</a>
+                            <a href="Scolarité.html">Scolarité</a>
+                        </div>
+                    </li>
+                    <li class="listes_deroulante">
+                        <div>Campus</div>
+                        <div class="elements_deroulant">
+                            <a href="campus_Abidjan_Plateau.html">Campus Abidjan-Plateau</a>
+                            <a href="campus_Abidjan_Yopougon.html">Campus Abidjan-Yopougon</a>
+                            <a href="campus_Yamoussoukro.html">Campus Yamoussoukro</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+            
+        </main>
+         <!-- Le pied de page de notre site web -->
+    <footer>
+        <div class="footer">
+
+            <!-- la section adresse et contact-->
+            <div class="adresse">
+                <p>Adresse : 123 Rue de l'Éducation, Ville, Pays</p>
+                <p>Téléphone : +123 456 7890 | Email : <a href="" >pigierci@pigier.com</a></p>
+            </div>
+
+            <!-- La section reseaux sociaux du site web -->
+            <div class="reseau_socials">
+                <a href="" target="_blank"><img src="Images/logo_FB.png" alt="logo de Facebook" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_insta.png" alt="logo de Instagram" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_twitter.png" alt="logo de Twitter" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_linkdin.png" alt="logo de LinkedIn" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_tik tok.png" alt="logo de Tik Tok" weight="80px" height="80px"></a>
+            </div>
+            <div>
+                <p>&copy; 2024 Pigier Côte d'Ivoire</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
