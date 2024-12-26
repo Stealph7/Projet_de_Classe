@@ -1,0 +1,322 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueille|pigier CI
+    </title>
+    <style>
+        /* Styles globaux pour le fond et la marge */
+        * {
+            background-color: antiquewhite;
+            
+        }
+        
+        /* Style pour l'en-tête */
+        header {
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid black; 
+            border-radius: 0px  0px 12px 12px;
+            box-shadow: 0px 4px 8px rgb(53, 39, 39); 
+            padding: 10px;
+            padding-bottom:10px ;
+            position: sticky;
+            top: 0px;
+            
+        }
+
+        header nav ul li a {
+
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* Style pour la navigation dans l'en-tête */
+        header nav ul {
+            display: flex;
+            align-items: center;
+            margin-right: 500px;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+
+        /* Style pour les éléments de la liste de navigation */
+        header nav ul li {
+            margin-right: 50px;
+            list-style: none;
+            text-align: center;
+            text-decoration: none;
+            color:rgb(15, 15, 15);
+            
+        }
+
+        /* Style pour les éléments déroulants */
+        .elements_deroulant {
+            display: none;
+            position: relative;
+            
+            padding-top: 40px;
+            z-index: 1;
+        }
+
+        /* Style pour les liens dans les éléments déroulants */
+        .elements_deroulant a {
+            display: block;
+            text-decoration: none;
+            color: rgb(196, 31, 31);
+            align-content: center;
+            background-color: white;
+            text-align: left;
+        }
+
+        /* Afficher les éléments déroulants au survol */
+        .listes_deroulante:hover .elements_deroulant {
+            display: block;
+            position: absolute;
+        }
+
+        /* Style pour la bannière de présentation */
+        #banniere_presentation {
+            border: 2px solid rgb(248, 244, 244); 
+            margin: 50px 15px 15px 15px;
+            display: flex;
+            width: 80%;
+            height: 500px;
+            justify-content: space-between;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgb(53, 39, 39);
+        }
+
+        /* Style pour les images dans la bannière de présentation */
+        #banniere_presentation img {
+            
+            width: 500px; 
+            height: 400px;
+            margin-right: 50px;
+            padding-top: 20px;
+            border-radius: 15px;
+            opacity: 0.3;
+            
+        }
+
+        /* Style pour le texte dans la bannière de présentation  */
+        #banniere_presentation h1{
+            padding-top: 100px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            word-spacing: 8px;
+        }
+
+        /* Style pour la section bannière  */
+        #banniere2{
+
+            border: 2px solid rgb(248, 244, 244); 
+            margin: 50px 15px 15px 15px;
+            display: flex;
+            width: 80%;
+            height: 500px;
+            justify-content: space-between;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgb(53, 39, 39);
+            padding-top: 50px;
+           
+        }
+
+        #banniere2 div h2{
+
+            text-align: center;
+            font-size: 30;
+            padding-top: 90px;
+
+        }
+
+        /* Style pour le lien commencez votre parcourt */
+        #banniere2 div a{
+
+           text-decoration: none;
+           line-height: 20;
+           color: red;
+           background-color: blue;
+            border-radius: 10px;
+            box-shadow: 8px rgb(46, 10, 10); 
+            padding: 15px;
+           font-size: 20px;
+           margin-top: 0px;
+        }
+        #banniere2 div {
+
+            display: block;
+            
+            padding-left: 70px;
+        }
+        /* Style pour l'image de la seconde bannière */
+        #banniere2 img{
+
+            
+            border: 2px white;
+            width: 500px; 
+            height: 400px;
+            margin-right: 50px;
+            float: right;
+            border-radius:15px ;
+            
+        }
+
+        /* Style pour formater la bannière statistiques */
+        #banniere_statistiques{
+            height: 500px;
+            border-radius: 0 0px 10px 10px;
+            box-shadow: 0 10px 10px 0;
+        }
+        #banniere_statistiques h3 {
+            padding-top: 30px;
+            text-align: center;
+            font-size: 50px;
+            text-shadow: 8px;
+        }
+
+        /* Style pour les différentezs cartes */
+        .cards {
+
+            display: flex;
+            justify-content: space-between;
+            margin-right: 100px;
+            margin-left: 100px;
+        
+            
+        }
+        .card {
+
+            border-radius: 10px;
+            box-shadow: 10px 10px brown;
+        }
+
+
+        footer {
+
+            text-align: center;
+            background-color: rgb(212, 7, 7);
+            margin-top: 50px;
+            margin-bottom: 0px;
+        }
+
+       
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Images/logo_pigier.jpg" alt="le logo de Pigier"  height="90px">
+        <nav>
+            <ul>
+                <li class="listes_deroulante">
+                    <a href="accueil.html">Accueil</a>
+                </li>
+                <li class="listes_deroulante">
+                    <span>A propos</span>
+                    <div class="elements_deroulant">
+                        <a href="Notre_histoire.html">Notre histoire</a>
+                        <a href="Notre_equipe.html">Notre équipe</a>
+                        <a href="Nos_diplomes.html">Nos diplômes</a>
+                    </div>
+                </li>
+                <li class="listes_deroulante">
+                    <span>Filières</span>
+                    <div class="elements_deroulant">
+                        <a href="">BTS Tourisme et Hôtellerie</a>
+                        <a href="">Licence Professionnelle Comptabilité Finance</a>
+                        <a href="">Licence Professionnelle Réseaux Génie Logiciel</a>
+                        <a href="">Licence Professionnelle Marketing</a>
+                        <a href="">Licence Professionnelle Gestion des Ressources Humaines</a>
+                        <a href="">Master Professionnel Finance Comptabilité</a>
+                        <a href="">Master Professionnel Marketing</a>
+                        <a href="">Master Professionnel Génie Informatique</a>
+                    </div>
+                </li>
+                <li class="listes_deroulante">
+                    <span>Admission</span>
+                    <div class="elements_deroulant">
+                        <a href="Nos_Parcourt.html">Nos Parcourts</a>
+                        <a href="">Conditions d'admission</a>
+                        <a href="">Scolarité</a>
+                    </div>
+                </li>
+                <li class="listes_deroulante">
+                    <div>Campus</div>
+                    <div class="elements_deroulant">
+                        <a href="campus_Abidjan_Plateau.html">Campus Abidjan-Plateau</a>
+                        <a href="campus_Abidjan_Yopougon.html">Campus Abidjan-Yopougon</a>
+                        <a href="campus_Yamoussoukro.html">Campus Yamoussoukro</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Bannière de présentation -->
+        <section id="banniere_presentation">
+            <h1>Bienvenue à Pigier Côte d'Ivoire</h1>
+            
+            <img src="Images/campus.jpg" alt="">
+        </section>
+        <section id="banniere2">
+            <div>
+                <h2>Façonnez votre avenir à Pigier CI</h2>
+                <a href="">Commencez votre parcourt</a>
+            </div>
+            <img src="Images/campus.jpg" alt="">
+            
+        </section>
+
+        <!-- Banière de différentes filières -->
+        <section>
+
+        </section>
+        <!-- Bannière de nos statistiques -->
+        <section id="banniere_statistiques">
+            <h3>Statistiques</h3>
+            <div class="cards">
+                <div class="card">
+                    <h4>Performances Académiques</h4>
+                    <p>Votre reussite notre </p>
+                </div>
+                <div class="card">
+                    <h4>Taux de rétention</h4>
+                </div>
+                <div class="card">
+                    <h4>Taux d'insertion</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Le pied de page de notre site web -->
+    <footer>
+        <div class="footer">
+
+            <!-- la section adresse et contact-->
+            <div class="adresse">
+                <p>Adresse : 123 Rue de l'Éducation, Ville, Pays</p>
+                <p>Téléphone : +123 456 7890 | Email : <a href="" >pigierci@pigier.com</a></p>
+            </div>
+
+            <!-- La section reseaux sociaux du site web -->
+            <div class="reseau_socials">
+                <a href="" target="_blank"><img src="Images/logo_FB.png" alt="logo de Facebook" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_insta.png" alt="logo de Instagram" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_twitter.png" alt="logo de Twitter" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_linkdin.png" alt="logo de LinkedIn" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="Images/logo_tik tok.png" alt="logo de Tik Tok" weight="80px" height="80px"></a>
+            </div>
+            <div>
+                <p>&copy; 2024 Pigier Côte d'Ivoire</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
