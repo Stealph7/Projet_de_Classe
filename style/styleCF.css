@@ -1,0 +1,97 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    padding-top: 60px; /* Laisse de l’espace pour le menu fixe (ajustez selon la hauteur du menu) */
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #0d47a1;
+    color: #fff;
+    padding: 20px 0;
+}
+/*titre*/
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+/* Menu de navigation fixe */
+nav {
+    position: fixed; /* Fixe le menu en haut de la page */
+    top: 0; /* Place le menu en haut */
+    left: 0; /* Place le menu à gauche */
+    width: 100%; /* S'étend sur toute la largeur */
+    background-color: rgba(34, 34, 34, 0.9); /* Couleur avec un peu de transparence */
+    z-index: 1000; /* Assure que le menu est toujours au-dessus des autres éléments */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet visuel agréable */
+}
+
+/* Style pour les liens dans le menu */
+.menu {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Main content */
+main {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+.footer {
+    background: #0d47a1;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+

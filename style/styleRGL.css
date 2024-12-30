@@ -1,0 +1,134 @@
+/* Corps principal */
+body {
+  font-family: 'Roboto', sans-serif; /* Police d'écriture générale */
+  line-height: 1.6; /* Hauteur minimale des lignes */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, rgba(33, 150, 243, 1) 0%, rgba(255, 87, 34, 1) 100%); /* Dégradé de bleu à orange */
+  color: #fff;
+}
+
+/* En-tête */
+header h1 {
+  text-align: center; /* Alignement du titre */
+  margin: 0;
+  padding: 40px 0;
+  color: #fff;
+  font-size: 50px; /* taille de la police */
+  text-transform: uppercase; /* Majuscule */
+  letter-spacing: 2px; /* Espace entre les lettres */
+  font-weight: bold; /* Mets le titre en gras */
+}
+
+/* Lien Accueil aligné à gauche */
+header a.accueil {
+  position: absolute; /* Maintient la position d'acceuil même pendant le défilement */
+  left: 20px;
+  top: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none; /* Ne pas souligné */ 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease; /* Animation losqu'on survole "accueil" */
+}
+
+/* Menu de navigation */
+nav {
+  background-color: #222;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Chevauchement de la page par le menu */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  display: flex;
+  justify-content: center; /* Définit comment l'espace est utilisé */
+  list-style-type: none; /* Enlève les puces des listes */
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  text-decoration: none; /* Enlève le surlignement */
+  color: #fff; /* Change la couleur des liens */
+  font-weight: bold; /* Police en gras */
+  padding: 8px 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* animation lente */
+}
+
+.menu a:hover {
+  background-color: #ff9800; /* Changer la couleur au survol */
+  color: #222;
+  border-radius: 4px;
+}
+
+/* Section principale */
+main {
+  padding: 30px;
+  max-width: 1200px; /* Taille maximal du bloc qui contient le corps */
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px; /* Bord arrondi */
+  backdrop-filter: blur(12px); /* Ajout d'un flou doux */
+}
+
+
+
+/* Style pour les images avec défilement */
+.image-slider {
+  display: flex; /* Dispose les images sur une seule ligne */
+  overflow-x: auto; /* La barre de défilement horizontale sera automatiquement affichée */
+  gap: 15px; /* La taille de l'écart entre chaque image dans la galerie. */
+  padding: 15px; /* Marge interne*/
+  background: rgba(0, 0, 0, 0.3); /* Fond semi-transparente*/
+  border-radius: 8px;
+  scroll-snap-type: x mandatory; /* Alignement des éléments lors du défilement doit se produire sur l'axe horizontal & arrêt forcé au moment où chaque image sera complètement visible */
+}
+
+.image-slider figure {
+  width: 500px; /* Largeur de chaque élément <figure> à 500 pixels. */
+  text-align: center;
+  scroll-snap-align: center; /* Lorsque l'utilisateur arrête de faire défiler les images, chaque image se place au centre de la vue du conteneur */
+}
+
+.image-slider img {
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.3s ease; /* Transtion lente */
+  height: 300px;
+}
+
+.image-slider img:hover {
+  transform: scale(1.05); /* Léder zoom au survolement */ 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre au survol */
+}
+
+.image-slider figcaption {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
