@@ -1,0 +1,95 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif; 
+    margin: 0;
+    background-image: url('../images/Assistante de direction_Secrétaire.jpeg'); /* Image de fond */
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-position: center; /* Centre l'image */
+    color: #4a4a4a; 
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: rgba(248, 243, 233, 0.9); /* Fond beige pastel semi-transparent */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #85a392; 
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7395ae; 
+    margin-right: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d4a5a5; 
+}
+
+/* Main Section */
+main {
+    background: rgba(255, 255, 255, 0.85); /* Fond blanc semi-transparent */
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 960px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #d2b48c; /* Ton pastel beige clair */
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+    color: #4a6fa5; /* Bleu doux pour les points de liste */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(240, 230, 220, 0.8); /* Fond beige pastel */
+    font-size: 0.9rem;
+    color: #6c757d; /* Texte gris pastel */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

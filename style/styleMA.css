@@ -1,0 +1,265 @@
+/* Généralités */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1d1d;
+    color: #f5f5f5;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+h1, h2, h3 {
+    color: #F5A623; /* Couleur dorée */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Sections */
+main {
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Objectifs */
+#objectifs ul,
+#competences ul,
+#debouches ul,
+#formation ul,
+#pourquoi-choisir ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+li:hover {
+    transform: translateX(10px);
+    color: #F5A623;
+}
+
+/* Animation sur les titres */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+/* Animation des éléments */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Liens et autres éléments interactifs */
+a {
+    color: #F5A623;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* Formulaire de contact et réservation */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+input, button {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #F5A623;
+    background-color: #333;
+    color: #f5f5f5;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: #F5A623;
+    border: none;
+    color: #1d1d1d;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D98D1D;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    animation: fadeInUp 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+/* Utilisation d'animation sur chaque section */
+section:nth-of-type(even) {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Animation globale de la page */
+body {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Styles pour le menu de navigation */
+#navbar {
+    background-color: #1d1d1d; /* Fond sombre */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: #F5A623; /* Couleur dorée */
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#navbar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #F5A623;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #fff; /* Changer la couleur au survol */
+    transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+#navbar ul li a:hover::after {
+    transform: scaleX(1); /* Animation de la ligne sous le lien */
+}
+
+/* Animation pour la page de navigation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Espacement pour éviter que le contenu soit caché sous la barre de navigation */
+body {
+    padding-top: 70px;
+}
+
+/* Pour les petits écrans, adaptez le menu pour qu'il soit plus compact */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        margin: 15px 0;
+    }
+
+    #navbar ul li a {
+        font-size: 1.5rem;
+    }
+}
+
