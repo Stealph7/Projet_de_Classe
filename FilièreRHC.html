@@ -5,194 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ressources Humaines et Communication</title>
     <link rel="stylesheet" href="styles/styleRhC.css"> 
-
-    <style>
-         /* Styles globaux pour le fond et la marge */
-         * {
-            background-color: antiquewhite;
-            
-        }
-        
-        /* Style pour l'en-tête */
-        header {
-            display: flex;
-            justify-content: space-between;
-            font-family: Arial, Helvetica, sans-serif;
-            border: 2px solid black; 
-            border-radius: 0px  0px 12px 12px;
-            box-shadow: 0px 4px 8px rgb(53, 39, 39); 
-            padding: 10px;
-            padding-bottom:10px ;
-            position: sticky;
-            top: 0px;
-            
-        }
-
-        header nav ul li a {
-
-            text-decoration: none;
-            color: black;
-        }
-
-
-        /* Style pour la navigation dans l'en-tête */
-        header nav ul {
-            display: flex;
-            align-items: center;
-            margin-right: 500px;
-            margin-top: 40px;
-            border-radius: 12px;
-        }
-
-        /* Style pour les éléments de la liste de navigation */
-        header nav ul li {
-            margin-right: 50px;
-            list-style: none;
-            text-align: center;
-            text-decoration: none;
-            color:rgb(15, 15, 15);
-            
-        }
-
-        /* Style pour les éléments déroulants */
-        .elements_deroulant {
-            display: none;
-            position: relative;
-            
-            padding-top: 40px;
-            z-index: 1;
-        }
-
-        /* Style pour les liens dans les éléments déroulants */
-        .elements_deroulant a {
-            display: block;
-            text-decoration: none;
-            color: rgb(196, 31, 31);
-            align-content: center;
-            background-color: white;
-            text-align: left;
-        }
-
-        /* Afficher les éléments déroulants au survol */
-        .listes_deroulante:hover .elements_deroulant {
-            display: block;
-            position: absolute;
-        }
-
-         /* Style pour le sous menu c-à-d les trois traits horizontaux */
-        #menu-toggle {
-            display: none;
-        }
-        
-        .menu-icon {
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-            padding: 10px;
-        }
-        
-        .menu-icon .bar {
-            width: 25px;
-            height: 3px;
-            background-color: #333;
-            margin: 4px 0;
-        }
-        
-        .nav {
-            display: none;
-            text-align: center;
-            background-color: white;
-            width: 200px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            position: absolute;
-            z-index: 2;
-            
-        }
-        .nav ul  {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            
-        }
-        
-        .nav ul li {
-            padding: 8px 0;
-            text-align: left;
-            padding-left: 30px;
-        }
-        
-        .nav ul li a {
-            text-decoration: none;
-            color: #333;
-            display: block;
-        }
-        
-        .nav ul li a:hover {
-            background-color: #f1f1f1;
-        }
-        
-        #menu-toggle:checked + .menu-icon + .nav {
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <img src="Images/logo_pigier.jpg" alt="le logo de Pigier"  height="90px">
-        <nav>
-            <ul>
-                <li class="listes_deroulante">
-                    <a href="accueil.html">Accueil</a>
-                </li>
-                <li class="listes_deroulante">
-                    <span>A propos</span>
-                    <div class="elements_deroulant">
-                        <a href="Notre_histoire.html">Notre histoire</a>
-                        <a href="Notre_equipe.html">Notre équipe</a>
-                        <a href="Nos_diplomes.html">Nos diplômes</a>
-                    </div>
-                </li>
-                <li class="listes_deroulante">
-                    <span>Filières</span>
-                    <div class="elements_deroulant">
-                        <a href="FilièresT-H.html">Tourisme et Hôtellerie</a>
-                        <a href="FilièreAD.html">Assistanat de Direction</a>
-                        <a href="FilièreCF.html">Comptabilité Finance</a>
-                        <a href="FilièreRGL.html">Réseaux Génie Logiciel</a>
-                        <a href="FilièreMA.html">Marketing Administration</a>
-                        <a href="FilièreRHC.html">Gestion des Ressources Humaines</a>
-                        
-                    </div>
-                </li>
-                <li class="listes_deroulante">
-                    <span>Admission</span>
-                    <div class="elements_deroulant">
-                        <a href="Nos_Parcourt.html">Nos Parcourts</a>
-                        <a href="">Conditions d'admission</a>
-                        <a href="">Scolarité</a>
-                    </div>
-                </li>
-                <li class="listes_deroulante">
-                    <div>Campus</div>
-                    <div class="elements_deroulant">
-                        <a href="campus_Abidjan_Plateau.html">Campus Abidjan-Plateau</a>
-                        <a href="campus_Abidjan_Yopougon.html">Campus Abidjan-Yopougon</a>
-                        <a href="campus_Yamoussoukro.html">Campus Yamoussoukro</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
         <h1>Ressources Humaines et Communication</h1>
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </label>
-        <nav class="nav">
-            <ul>
+        <nav>
+            <ul class="menu">
                 <li><a href="Projet_de_Classe/accueil.html">Accueil</a></li>
                 <li><a href="#objectifs">Objectifs</a></li>
                 <li><a href="#domaines">Domaines</a></li>
@@ -201,7 +19,7 @@
                 <li><a href="#pourquoi">Pourquoi choisir RhC</a></li>
             </ul>
         </nav>
-    
+    </header>
 
     <main class="container">
         <section id="introduction">
@@ -210,10 +28,6 @@
                 La filière Ressources Humaines et Communication (RhC) se concentre sur la gestion des talents, la communication interne et externe, et le développement organisationnel. 
                 Cette formation prépare les étudiants à devenir des experts en gestion des ressources humaines et en communication stratégique.
             </p>
-            <video width="100%" autoplay muted controls>
-                <source src="images/RhC média/Introduction aux RH et à la Communication.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la lecture vidéo.
-            </video>
         </section>
 
         <section id="objectifs">
@@ -281,7 +95,26 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Filière Ressources Humaines et Communication. Tous droits réservés.</p>
+        <div class="footer">
+
+            <!-- la section adresse et contact-->
+            <div class="adresse">
+                <p>Adresse : 123 Rue de l'Éducation, Ville, Pays</p>
+                <p>Téléphone : +123 456 7890 | Email : <a href="" >pigierci@pigier.com</a></p>
+            </div>
+
+            <!-- La section reseaux sociaux du site web -->
+            <div class="reseau_socials">
+                <a href="" target="_blank"><img src="/Projet_de_Classe/Images/logo_FB.png" alt="logo de Facebook" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="/Projet_de_Classe/Images/logo_insta.png" alt="logo de Instagram" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="/Projet_de_Classe/Images/logo_twitter.png" alt="logo de Twitter" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="/Projet_de_Classe/Images/logo_linkdin.png" alt="logo de LinkedIn" weight="80px" height="80px"></a>
+                <a href="" target="_blank"><img src="/Projet_de_Classe/Images/logo_tik tok.png" alt="logo de Tik Tok" weight="80px" height="80px"></a>
+            </div>
+            <div>
+                <p>&copy; 2025 - Tous droits réservés - Groupe 12</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
