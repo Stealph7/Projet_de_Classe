@@ -8,39 +8,40 @@
     <style>
         /* Styles globaux pour le fond et la marge */
         * {
-            background-color: antiquewhite;
-            
+            background-color: #081F5C;
+            color: #FFF9F0;
+            font-family: 'Times New Roman', Times, serif;
         }
+
+        /*pour centré le menu et j'ai supprimé acceuil*/
+        nav{
+            background-color: #7096D1;
+            flex-grow: 1;
+        }
+        
         
         /* Style pour l'en-tête */
         header {
+            flex-grow: 1;
             display: flex;
             justify-content: space-between;
-            font-family: Arial, Helvetica, sans-serif;
-            border: 2px solid black; 
+            border: 2px solid #334EAC; 
             border-radius: 0px  0px 12px 12px;
-            box-shadow: 0px 4px 8px rgb(53, 39, 39); 
-            padding: 10px;
+            width: auto;
+            padding: 20px;
             padding-bottom:10px ;
             position: sticky;
-            top: 0px;
-            
-        }
-
-        header nav ul li a {
-
-            text-decoration: none;
-            color: black;
+            top: 0;
+            background-color: #7096D1;
         }
 
 
         /* Style pour la navigation dans l'en-tête */
         header nav ul {
             display: flex;
-            align-items: center;
-            margin-right: 500px;
-            margin-top: 40px;
-            border-radius: 12px;
+            justify-content: center;
+            list-style-type: none;
+            background-color: #7096D1;
         }
 
         /* Style pour les éléments de la liste de navigation */
@@ -49,15 +50,30 @@
             list-style: none;
             text-align: center;
             text-decoration: none;
-            color:rgb(15, 15, 15);
-            
+            font-size: 2em;
+            color: #F7F2EB;
+            background-color: #7096D1;  
+        }
+
+        header nav ul li span {
+            background-color: #7096D1;
+            transition: background-color 0.3s ease, color 0.7s ease;
+        }
+
+        /*transition au survol*/
+        header nav ul li span:hover{
+            color: #081F5C;
+            background-color: #F7F2EB;
+            font-size: 1.5em;
+            border-radius: 12px;
         }
 
         /* Style pour les éléments déroulants */
         .elements_deroulant {
             display: none;
             position: relative;
-            
+            background-color: #D0E3FF;
+            border-radius:  12px;
             padding-top: 40px;
             z-index: 1;
         }
@@ -66,10 +82,12 @@
         .elements_deroulant a {
             display: block;
             text-decoration: none;
-            color: rgb(196, 31, 31);
+            color: rgb(186, 214, 232);
             align-content: center;
-            background-color: white;
             text-align: left;
+            color: #334EAC;
+            background-color: #D0E3FF;
+            border-radius: 12px;
         }
 
         /* Afficher les éléments déroulants au survol */
@@ -78,6 +96,8 @@
             position: absolute;
         }
 
+
+
         /* Style pour la bannière de présentation */
         #banniere_presentation {
             border: 2px solid rgb(248, 244, 244); 
@@ -85,20 +105,20 @@
             display: flex;
             width: 80%;
             height: 500px;
-            justify-content: space-between;
+            justify-content: space-around;
             border-radius: 12px;
-            box-shadow: 0px 4px 8px rgb(53, 39, 39);
+            box-shadow: 0px 4px 8px rgb(186, 214, 232);
+            background-color: #334EAC;
+            
         }
 
         /* Style pour les images dans la bannière de présentation */
         #banniere_presentation img {
-            
             width: 500px; 
             height: 400px;
             margin-right: 50px;
             padding-top: 20px;
             border-radius: 15px;
-            opacity: 0.3;
             
         }
 
@@ -109,6 +129,8 @@
             font-size: 50px;
             font-weight: bold;
             word-spacing: 8px;
+            background-color: #334EAC;
+
         }
 
         /* Style pour la section bannière  */
@@ -121,64 +143,64 @@
             height: 500px;
             justify-content: space-between;
             border-radius: 12px;
-            box-shadow: 0px 4px 8px rgb(53, 39, 39);
             padding-top: 50px;
+            background-color: #334EAC;
            
         }
 
         #banniere2 div h2{
 
             text-align: center;
-            font-size: 30;
+            font-size: 30px;
             padding-top: 90px;
-
+            background-color: #334EAC;
         }
 
         /* Style pour le lien commencez votre parcourt */
         #banniere2 div a{
 
            text-decoration: none;
-           line-height: 15;
-           color: red;
-           background-color: white;
+           line-height: 20;
+           color: #081F5C;
+           background-color: #F7F2EB;
             border-radius: 10px;
-            box-shadow: 8px rgb(46, 10, 10); 
+            box-shadow: 10px rgb(10, 36, 46); 
             padding: 15px;
            font-size: 20px;
            margin-top: 0px;
+          
         }
 
-        
+       
         #banniere2 div {
 
             display: block;
-            
+            background-color: #334EAC;
             padding-left: 70px;
         }
+
         /* Style pour l'image de la seconde bannière */
         #banniere2 img{
-
-            
             border: 2px white;
             width: 500px; 
             height: 400px;
             margin-right: 50px;
             float: right;
             border-radius:15px ;
-            
         }
 
         /* Style pour formater la bannière statistiques */
         #banniere_statistiques{
-            height: 500px;
+            height: 300px;
             border-radius: 0 0px 10px 10px;
-            box-shadow: 0 10px 10px 0;
+            background-color: #D0E3FF;
         }
         #banniere_statistiques h3 {
             padding-top: 30px;
             text-align: center;
             font-size: 50px;
             text-shadow: 8px;
+
         }
 
         /* Style pour les différentezs cartes */
@@ -188,20 +210,19 @@
             justify-content: space-between;
             margin-right: 100px;
             margin-left: 100px;
-        
-            
+            background-color: #D0E3FF;
+            height: 100px;
         }
         .card {
 
             border-radius: 10px;
-            box-shadow: 10px 10px brown;
+            box-shadow: 10px 10px #334EAC;
         }
 
 
         footer {
 
             text-align: center;
-            background-color: rgb(212, 7, 7);
             margin-top: 50px;
             margin-bottom: 0px;
         }
@@ -217,38 +238,33 @@
         <nav>
             <ul>
                 <li class="listes_deroulante">
-                    <a href="accueil.html">Accueil</a>
-                </li>
-                <li class="listes_deroulante">
                     <span>A propos</span>
                     <div class="elements_deroulant">
                         <a href="Notre_histoire.html">Notre histoire</a>
-                        <a href="Notre_equipe.html">Notre équipe</a>
                         <a href="Nos_diplomes.html">Nos diplômes</a>
                     </div>
                 </li>
                 <li class="listes_deroulante">
                     <span>Filières</span>
                     <div class="elements_deroulant">
-                        <a href="FilièresT-H.html">Tourisme et Hôtellerie</a>
-                        <a href="FilièreAD.html">Assistanat de Direction</a>
-                        <a href="FilièreCF.html">Comptabilité Finance</a>
-                        <a href="FilièreRGL.html">Réseaux Génie Logiciel</a>
-                        <a href="FilièreMA.html">Marketing Administration</a>
-                        <a href="FilièreRHC.html">Gestion des Ressources Humaines</a>
-                        
+                        <a href="../FilièresT-H.html">Tourisme et Hôtellerie</a>
+                        <a href="../FilièreCF.html">Comptabilité Finance</a>
+                        <a href="../FilièreRGL.html">Réseaux Génie Logiciel</a>
+                        <a href="../FilièreMA.html">Marketing</a>
+                        <a href="../FilièreRHC.html">Gestion des Ressources Humaines</a>
+                        <a href="../FilièreAD.html">Assistanat de Direction</a>
                     </div>
                 </li>
                 <li class="listes_deroulante">
                     <span>Admission</span>
                     <div class="elements_deroulant">
                         <a href="Nos_Parcourt.html">Nos Parcourts</a>
-                        <a href="Admission.html">Conditions d'admission</a>
-                        <a href="Scolarité.html">Scolarité</a>
+                        <a href="">Conditions d'admission</a>
+                        <a href="">Scolarité</a>
                     </div>
                 </li>
                 <li class="listes_deroulante">
-                    <div>Campus</div>
+                    <span>Campus</span>
                     <div class="elements_deroulant">
                         <a href="campus_Abidjan_Plateau.html">Campus Abidjan-Plateau</a>
                         <a href="campus_Abidjan_Yopougon.html">Campus Abidjan-Yopougon</a>
@@ -262,24 +278,14 @@
         <!-- Bannière de présentation -->
         <section id="banniere_presentation">
             <h1>Bienvenue à Pigier Côte d'Ivoire</h1>
-            
-            <img src="Images/campus.jpg" alt="">
+            <img src="Images/campus.jpg" >
         </section>
         <section id="banniere2">
             <div>
                 <h2>Façonnez votre avenir à Pigier CI</h2>
-                <p>Pigier CI l'endroit parfait pour une formation de qualité</p>
-                <p>Avec nous votre rêve devient réalité</p>
-                <a href="Nos_Parcourt.html">Commencez votre parcourt</a>
+                <a href="">Commencez votre parcourt</a>
             </div>
-            <img src="Images/campus.jpg" alt="">
-            
-        </section>
-        
-
-        <!-- Banière de différentes filières -->
-        <section>
-
+            <img src="Images/campus.jpg" > 
         </section>
         <!-- Bannière de nos statistiques -->
         <section id="banniere_statistiques">
@@ -297,7 +303,6 @@
                 </div>
             </div>
         </section>
-        
     </main>
 
     <!-- Le pied de page de notre site web -->
