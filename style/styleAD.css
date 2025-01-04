@@ -63,33 +63,62 @@ li {
     margin-bottom: 0.8rem;
     color: #4a6fa5; /* Bleu doux pour les points de liste */
 }
+/* Section Formation */
+#formation {
+    background-color: rgba(248, 243, 233, 0.9); /* Fond beige pastel semi-transparent */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
+#formation h2 {
+    font-size: 2.5rem;
+    color: #85a392; 
+    margin: 0;
+}
 
+#formation p a {
+    text-decoration: none;
+    color: #7395ae; 
+    margin-right: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+#formation p a:hover {
+    color: #d4a5a5; 
+}
+#formation p {
+    font-size: 1.5rem;
+    color: #7395ae; 
+    margin-bottom: 1rem;
+}
+#formation ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+#formation li {
+    margin-bottom: 0.8rem;
+    color: #4a6fa5; 
+}
 /* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: rgba(240, 230, 220, 0.8); /* Fond beige pastel */
+    background-color: rgba(240, 230, 220, 0.8); 
     font-size: 0.9rem;
-    color: #6c757d; /* Texte gris pastel */
+    color: #6c757d; 
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav a {
-        margin-right: 10px;
-        font-size: 0.9rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
+footer p {
+    margin: 0;
 }
+footer a {
+    color: #6c757d; 
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/*fin de la page*/
