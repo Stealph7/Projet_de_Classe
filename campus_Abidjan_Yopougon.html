@@ -6,86 +6,160 @@
     <title>Document</title>
 
     <style>
-            /* Styles globaux pour le fond et la marge */
-        * {
-            background-color: antiquewhite;
-            
-        }
+        /* Styles globaux pour le fond et la marge */
+       * {
+       background-color: white;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+       }
+   
+       /* Style pour l'en-tête */
+       header {
+           display: flex;
+           justify-content: space-between;
+           font-family: Arial, Helvetica, sans-serif;
+           border: 1px solid #F5F9FF; 
+           border-radius: 0px  0px 12px 12px;
+           box-shadow: 0px 2px 4px white; 
+           padding: 10px;
+           padding-bottom:10px ;
+           position: sticky;
+           top: 0px;
+           background-color: #DDF344;
+       }
+       nav {
+           background-color: #DDF344;
+           border-radius: 12px;
+       }
+       
+       nav ul li span {
+           background-color: #DDF344;
+           color: #4849E8;
+           font-size: 1.5em;
+           transform: color 0.7s background-color 0.7s;
+       }
+       nav ul li span:hover {
+           background-color: #ABC4FF;
+           color: #F5F9FF;
+           font-size: 1.6em;
+           transform: scale(1.1);
+           border-radius: 18px;
+       }
+
+       header nav ul li a {
+           text-decoration: none;
+           color: #4849E8;
+           background-color: #DDF344;
+           font-size: 1.5em;
+           transform: color 0.7s background-color 0.7s;
+       }
+       header nav ul li a:hover {
+           background-color: #ABC4FF;
+           color: #F5F9FF;
+           font-size: 1.5em;
+           transform: scale(1.1);
+           border-radius: 12px;
+       }
+
+
+       /* Style pour la navigation dans l'en-tête */
+       header nav ul {
+           display: flex;
+           align-items: center;
+           margin-right: 500px;
+           margin-top: 40px;
+           border-radius: 12px;
+           background-color: #DDF344;
+       }
+
+       /* Style pour les éléments de la liste de navigation */
+       header nav ul li {
+           margin-right: 50px;
+           list-style: none;
+           text-align: center;
+           text-decoration: none;
+           color:rgb(15, 15, 15);
+           background-color: #DDF344;
+       }
+
+       /* Style pour les éléments déroulants */
+       .elements_deroulant {
+           display: none;
+           position: relative;
+           background-color: #ABC4FF;
+           padding-top: 40px;
+           z-index: 1;
+           border-radius: 12px;
+       }
+
+       /* Style pour les liens dans les éléments déroulants */
+       .elements_deroulant a {
+           display: block;
+           text-decoration: none;
+           color: #DDF344;
+           align-content: center;
+           text-align: left;
+           background-color: #ABC4FF;
+           border-radius: 12px;
+       }
+
+       /* Afficher les éléments déroulants au survol */
+       .listes_deroulante:hover .elements_deroulant {
+           display: block;
+           position: absolute;
+       }
+
+
+       /* Style pour le nom du Campus  */
+       .campus_Abidjan_Yopougon h2 {
+
+           text-align: center;
+           padding-top:90px;
+           font-size: 40px;
+           color: #4849E8;
+       }
+       .campus_Abidjan_Yopougon p {
+
+           text-align: center;
+           font-size: 25px;
+           color: black;
+       }
+       .campus_Abidjan_Yopougon video {
         
-        /* Style pour l'en-tête */
-        header {
-            display: flex;
-            justify-content: space-between;
-            font-family: Arial, Helvetica, sans-serif;
-            border: 2px solid black; 
-            border-radius: 0px  0px 12px 12px;
-            box-shadow: 0px 4px 8px rgb(53, 39, 39); 
-            padding: 10px;
-            padding-bottom:10px ;
-            position: sticky;
-            top: 0px;
-            
-        }
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           width: 100%;
+           border-radius: 12px;
+           background-color: #ABC4FF;
+       }
+       /* Style du pied de page  */
+       .footer {
 
-        header nav ul li a {
+           text-align: center;
+           background-color: #DDF344;
+           margin-top: 100px;
+       }
+       .footer p {
+           background-color: #DDF344;
+           font-size: 20px;
+           color: #4849E8;
+       }
+       .footer a {
+           background-color: #DDF344;
+           text-decoration: none;
+           color: #4849E8;
+       }
+       .footer a:hover {
 
-            text-decoration: none;
-            color: black;
-        }
+           color: #ABC4FF;
+       }
+       .reseau_socials {
+           background-color: #DDF344;
+           border-radius: 12px;
+       }
 
-
-        /* Style pour la navigation dans l'en-tête */
-        header nav ul {
-            display: flex;
-            align-items: center;
-            margin-right: 500px;
-            margin-top: 40px;
-            border-radius: 12px;
-        }
-
-        /* Style pour les éléments de la liste de navigation */
-        header nav ul li {
-            margin-right: 50px;
-            list-style: none;
-            text-align: center;
-            text-decoration: none;
-            color:rgb(15, 15, 15);
-            
-        }
-
-        /* Style pour les éléments déroulants */
-        .elements_deroulant {
-            display: none;
-            position: relative;
-            
-            padding-top: 40px;
-            z-index: 1;
-        }
-
-        /* Style pour les liens dans les éléments déroulants */
-        .elements_deroulant a {
-            display: block;
-            text-decoration: none;
-            color: rgb(196, 31, 31);
-            align-content: center;
-            background-color: white;
-            text-align: left;
-        }
-
-        /* Afficher les éléments déroulants au survol */
-        .listes_deroulante:hover .elements_deroulant {
-            display: block;
-            position: absolute;
-        }
-
-        footer {
-                text-align: center;
-                background-color: rgb(212, 7, 7);
-                margin-top: 50px;
-                margin-bottom: 0px;
-        }
-
-    </style>
+   </style>
 </head>
 <body>
     <header>
@@ -106,12 +180,12 @@
                 <li class="listes_deroulante">
                     <span>Filières</span>
                     <div class="elements_deroulant">
-                        <a href="FilièresT-H.html">Tourisme et Hôtellerie</a>
-                        <a href="FilièreAD.html">Assistanat de Direction</a>
-                        <a href="FilièreCF.html">Comptabilité Finance</a>
-                        <a href="FilièreRGL.html">Réseaux Génie Logiciel</a>
-                        <a href="FilièreMA.html">Marketing Administration</a>
-                        <a href="FilièreRHC.html">Gestion des Ressources Humaines</a>
+                        <a href="../FilièresT-H.html">Tourisme et Hôtellerie</a>
+                        <a href="../FilièreCF.html">Comptabilité Finance</a>
+                        <a href="../FilièreRGL.html">Réseaux Génie Logiciel</a>
+                        <a href="../FilièreMA.html">Marketing</a>
+                        <a href="../FilièreRHC.html">Gestion des Ressources Humaines</a>
+                        <a href="../FilièreAD.html">Assistanat de Direction</a>
                     </div>
                 </li>
                 <li class="listes_deroulante">
@@ -123,10 +197,9 @@
                     </div>
                 </li>
                 <li class="listes_deroulante">
-                    <div>Campus</div>
+                    <span>Campus</span>
                     <div class="elements_deroulant">
                         <a href="campus_Abidjan_Plateau.html">Campus Abidjan-Plateau</a>
-                        <a href="campus_Abidjan_Yopougon.html">Campus Abidjan-Yopougon</a>
                         <a href="campus_Yamoussoukro.html">Campus Yamoussoukro</a>
                     </div>
                 </li>
@@ -134,9 +207,9 @@
         </nav>
     </header>
     <main>
-        <div class="">
+        <div class="campus_Abidjan_Yopougon">
             <h2 class="nom_campus">Campus Abidjan Yopougon</h2>
-            <img src="" alt="">
+            <video src="Images/Download.mp4" controls width="1600px" height="800px"></video>
             <p>
                 L'école Pigier Yopougon est située à Ananeraie, près de Mamie Adjoua, dans le quartier CHU-Extension à Abidjan, Yopougon. <br>
                 Le campus est facilement accessible et dispose d'une boîte postale à 01 BP 1585 Abidjan 01
@@ -163,7 +236,7 @@
                 <a href="" target="_blank"><img src="Images/logo_tik tok.png" alt="logo de Tik Tok" weight="80px" height="80px"></a>
             </div>
             <div>
-                <p>&copy; 2024 Pigier Côte d'Ivoire</p>
+                <p>&copy; 2025 - Tous droits réservés - Groupe 12</p>
             </div>
         </div>
     </footer>
