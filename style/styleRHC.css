@@ -1,0 +1,163 @@
+/* styles/styleRhC.css */
+
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0; /* Argenté très clair */
+    background-color: #2f2f2f; /* Gris sombre */
+}
+
+/* Filtre léger pour améliorer la lisibilité */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Filtre noir semi-transparent */
+    z-index: -1;
+}
+
+/* En-tête */
+header {
+    background-color: #3b3b3b; /* Gris foncé */
+    color: #f0f0f0; /* Argenté clair */
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Ombre légère */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+    color: #66b266; /* Vert forêt brillant */
+}
+
+/* Menu de navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2a2a2a; /* Gris sombre */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0; /* Argenté clair */
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #66b266; /* Vert forêt brillant */
+    color: #2f2f2f; /* Texte sombre */
+}
+
+/* Contenu principal */
+.container {
+    padding-top: 6rem; /* Compense la hauteur du menu fixe */
+    margin: 0 auto;
+    max-width: 90%;
+    background-color: #3b3b3b; /* Fond gris foncé */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #f0f0f0; /* Texte argenté clair */
+}
+
+/* Titres de sections */
+h2 {
+    font-size: 2rem;
+    color: #66b266; /* Vert forêt brillant */
+    border-bottom: 2px solid #66b266; /* Bordure verte brillante */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Listes */
+ul, ol {
+    padding-left: 2rem;
+    color: #f0f0f0; /* Texte argenté clair */
+}
+
+ul li::before, ol li::before {
+    content: '•'; /* Puce classique */
+    margin-right: 0.5rem;
+    color: #66b266; /* Vert forêt brillant */
+}
+
+ul li, ol li {
+    margin-bottom: 0.8rem;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: #66b266; /* Vert forêt brillant */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #99cc99; /* Vert plus clair */
+    text-decoration: underline;
+}
+
+/* Section Formation */
+section#formation {
+    background-color: #424242; /* Gris moyen */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #f0f0f0;
+}
+
+section#formation ul li {
+    color: #99cc99; /* Vert clair brillant */
+}
+
+/* Pied de page */
+footer {
+    background-color: #333333; /* Gris sombre */
+    color: #e0e0e0; /* Argenté clair */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Effets de transition */
+h1, h2, p, li, a {
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover {
+    color: #66b266; /* Vert forêt brillant */
+}
+footer a:hover {
+    color: #66b266; /* Vert forêt brillant */
+}
+footer a {
+    color: #e0e0e0; /* Argenté clair */
+}
+/* styles/styleRhC.css */
