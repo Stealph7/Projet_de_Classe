@@ -7,7 +7,8 @@
         <style>
              /* Styles globaux pour le fond et la marge */
             * {
-            background-color: antiquewhite;
+            background-color: white;
+            font-family: cursive;
             
             }
         
@@ -16,20 +17,47 @@
                 display: flex;
                 justify-content: space-between;
                 font-family: Arial, Helvetica, sans-serif;
-                border: 2px solid black; 
+                border: 2px solid #B1275E; 
                 border-radius: 0px  0px 12px 12px;
-                box-shadow: 0px 4px 8px rgb(53, 39, 39); 
+                box-shadow: 0px 4px 8px rgb(226, 89, 143); 
                 padding: 10px;
                 padding-bottom:10px ;
                 position: sticky;
                 top: 0px;
+                background-color: #E35026;
+            }
+            nav {
+                background-color: #E35026;
+                border-radius: 12px;
+            }
             
+            nav ul li span {
+                background-color: #E35026;
+                color: white;
+                font-size: 1.5em;
+                transform: color 0.7s background-color 0.7s;
+            }
+            nav ul li span:hover {
+                background-color: white;
+                color: #B1275E;
+                font-size: 1.5em;
+                transform: scale(1.1);
+                border-radius: 12px;
             }
 
             header nav ul li a {
-
                 text-decoration: none;
-                color: black;
+                color: white;
+                background-color: #E35026;
+                font-size: 1.5em;
+                transform: color 0.7s background-color 0.7s;
+            }
+            header nav ul li a:hover {
+                background-color: white;
+                color: #B1275E;
+                font-size: 1.5em;
+                transform: scale(1.1);
+                border-radius: 12px;
             }
 
 
@@ -40,6 +68,7 @@
                 margin-right: 500px;
                 margin-top: 40px;
                 border-radius: 12px;
+                background-color: #E35026;
             }
 
             /* Style pour les éléments de la liste de navigation */
@@ -49,26 +78,29 @@
                 text-align: center;
                 text-decoration: none;
                 color:rgb(15, 15, 15);
-                
+                background-color: #E35026;
             }
 
             /* Style pour les éléments déroulants */
             .elements_deroulant {
                 display: none;
                 position: relative;
-                
+                background-color: #F6D5D5;
                 padding-top: 40px;
                 z-index: 1;
+                border-radius: 12px;
             }
 
             /* Style pour les liens dans les éléments déroulants */
             .elements_deroulant a {
                 display: block;
                 text-decoration: none;
-                color: rgb(196, 31, 31);
+                color: #B1275E;
                 align-content: center;
                 background-color: white;
                 text-align: left;
+                background-color: #F6D5D5;
+                border-radius: 12px;
             }
 
             /* Afficher les éléments déroulants au survol */
@@ -83,30 +115,58 @@
 
                 text-align: center;
                 padding-top:90px;
-                background-image: url(Images/image_yakro.jpg);
-                background-repeat: no-repeat;
-                
-                height: 200px;
-                font-size: 50px;
+                font-size: 40px;
+                color: red;
             }
-            
+            .campus_yakro p {
 
-            /* Style pour le lien En savoir plus */
+                text-align: center;
+                font-size: 25px;
+                color: #B1275E;
+            }
+            .campus_yakro img {
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                border-radius: 10px;
+                width: 1600px;
+                height: 800px;
+            }
             .campus_yakro a {
 
-                text-decoration: none;
-                border:solid 1px white;
-                border-radius: 10px;
-                font-size: 25px;
-                background-color: yellow;
+                display: block;
+                text-align: center;
+                font-size: 30px;
+                color: #B1275E;
+                margin-top: 50px;
             }
 
             /* Style du pied de page  */
-            footer {
+            .footer {
 
                 text-align: center;
-                background-color: rgb(212, 7, 7);
+                background-color: #F6D5D5;
                 margin-top: 100px;
+            }
+            .footer p {
+                background-color: #F6D5D5;
+                font-size: 20px;
+                color: #B1275E;
+            }
+            .footer a {
+                background-color: #F6D5D5;
+                text-decoration: none;
+                color: #B1275E;
+            }
+            .footer a:hover {
+
+                color: red;
+            }
+            .reseau_socials {
+                background-color: #F6D5D5;
+                border-radius: 12px;
             }
 
         </style>
@@ -130,13 +190,12 @@
                     <li class="listes_deroulante">
                         <span>Filières</span>
                         <div class="elements_deroulant">
-                            <a href="FilièresT-H.html">Tourisme et Hôtellerie</a>
-                            <a href="FilièreAD.html">Assistanat de Direction</a>
-                            <a href="FilièreCF.html">Comptabilité Finance</a>
-                            <a href="FilièreRGL.html">Réseaux Génie Logiciel</a>
-                            <a href="FilièreMA.html">Marketing Administration</a>
-                            <a href="FilièreRHC.html">Gestion des Ressources Humaines</a>
-                        </div>
+                        <a href="../FilièresT-H.html">Tourisme et Hôtellerie</a>
+                        <a href="../FilièreCF.html">Comptabilité Finance</a>
+                        <a href="../FilièreRGL.html">Réseaux Génie Logiciel</a>
+                        <a href="../FilièreMA.html">Marketing</a>
+                        <a href="../FilièreRHC.html">Gestion des Ressources Humaines</a>
+                        <a href="../FilièreAD.html">Assistanat de Direction</a>
                     </li>
                     <li class="listes_deroulante">
                         <span>Admission</span>
@@ -147,11 +206,10 @@
                         </div>
                     </li>
                     <li class="listes_deroulante">
-                        <div>Campus</div>
+                        <span>Campus</span>
                         <div class="elements_deroulant">
                             <a href="campus_Abidjan_Plateau.html">Campus Abidjan-Plateau</a>
                             <a href="campus_Abidjan_Yopougon.html">Campus Abidjan-Yopougon</a>
-                            <a href="campus_Yamoussoukro.html">Campus Yamoussoukro</a>
                         </div>
                     </li>
                 </ul>
@@ -165,6 +223,7 @@
                     <p>
                         L'école Pigier Yamoussoukro est située à Yamoussoukro, la capitale politique de la Côte d'Ivoire. <br>Plus précisément, elle se trouve face à l'hôtel Président. Le campus est accessible via la Route P4W+5PX
                     </p>
+                    <img src="Images/image_yakro.jpg" alt="image du campus de Yamoussoukro" height="400px" width="600px">
                     <a href="">En savoir plus</a>
                 </div>
                 
@@ -189,7 +248,7 @@
                 <a href="" target="_blank"><img src="Images/logo_tik tok.png" alt="logo de Tik Tok" weight="80px" height="80px"></a>
             </div>
             <div>
-                <p>&copy; 2024 Pigier Côte d'Ivoire</p>
+                <p>&copy; 2025 - Tous droits réservés - Groupe 12</p>
             </div>
         </div>
     </footer>
