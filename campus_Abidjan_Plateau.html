@@ -8,8 +8,24 @@
     <style>
          /* Styles globaux pour le fond et la marge */
          * {
-            background-color: antiquewhite;
-            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0px;
+            padding: 0px;
+           
+        }
+        main {
+            background-image: url(https://edukiya.com/wp-content/uploads/2020/05/Pigier-abidjan-cote-divoire-orientation-bacheliers-3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
         }
         
         /* Style pour l'en-tête */
@@ -17,20 +33,40 @@
             display: flex;
             justify-content: space-between;
             font-family: Arial, Helvetica, sans-serif;
-            border: 2px solid black; 
+            border: 2px solid #282828; 
             border-radius: 0px  0px 12px 12px;
             box-shadow: 0px 4px 8px rgb(53, 39, 39); 
             padding: 10px;
             padding-bottom:10px ;
             position: sticky;
             top: 0px;
-            
+            background-color: #193497;
         }
 
         header nav ul li a {
-
             text-decoration: none;
-            color: black;
+            color: #F9F6EF;
+            font-size: 1.5em;
+            border-radius: 18px;
+        }
+        header nav ul li a:hover {
+            color: #193497;
+            font-size: 1.7em;
+            transform: scale(1.1);
+            background-color: #F9F6EF;
+        }
+        header nav ul li span {
+            background-color: #193497;
+            color: #F9F6EF;
+            font-size: 1.5em;
+            transform: color 0.7s background-color 0.7s;
+        }
+        header nav ul li span:hover {
+            background-color: #F9F6EF;
+            color: #193497;
+            font-size: 1.6em;
+            transform: scale(1.1);
+            border-radius: 18px;
         }
 
 
@@ -41,6 +77,7 @@
             margin-right: 500px;
             margin-top: 40px;
             border-radius: 12px;
+
         }
 
         /* Style pour les éléments de la liste de navigation */
@@ -57,19 +94,22 @@
         .elements_deroulant {
             display: none;
             position: relative;
-            
+            background-color: #F9F6EF;
             padding-top: 40px;
             z-index: 1;
+            border-radius: 12px;
         }
 
         /* Style pour les liens dans les éléments déroulants */
         .elements_deroulant a {
             display: block;
             text-decoration: none;
-            color: rgb(196, 31, 31);
+            color: #EDA398;
             align-content: center;
-            background-color: white;
+            background-color: #F9F6EF;
             text-align: left;
+            padding: 10px;
+            
         }
 
         /* Afficher les éléments déroulants au survol */
@@ -77,12 +117,59 @@
             display: block;
             position: absolute;
         }
+        /* Style pour le contenu de la page */
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #F9F6EF;
+            background-color: #193497;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgb(53, 39, 39);
+            margin-top: 50px;
+        }
+        .campus_Abidjan_Plateau  {
+            background-color: #F9F6EF;
+            font-size: 1em;
+            display: flex;
+            margin-top: 50px;
+            color: black;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgb(53, 39, 39);
+            width: 98%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .nom_campus {
+            text-align: center;
+            font-size: 2em;
+            color: #193497;
+            padding-top: 20px;
+        }
+        .campus_Abidjan_Plateau span {
+            
+            color: #193497;
+        }
 
         footer {
                 text-align: center;
-                background-color: rgb(212, 7, 7);
+                background-color: #193497;
                 margin-top: 50px;
                 margin-bottom: 0px;
+                padding: 10px;
+                border-radius: 0px 0px 12px 12px;
+                box-shadow: 0px 4px 8px rgb(53, 39, 39);
+                color: #F9F6EF;
+                font-size: 1.5em;
+        }
+        footer a {
+            color: #F9F6EF;
+        }
+        footer a:hover {
+            color: #193497;
+            background-color: #F9F6EF;
         }
 
 
@@ -107,12 +194,12 @@
                 <li class="listes_deroulante">
                     <span>Filières</span>
                     <div class="elements_deroulant">
-                        <a href="FilièresT-H.html">Tourisme et Hôtellerie</a>
-                        <a href="FilièreAD.html">Assistanat de Direction</a>
-                        <a href="FilièreCF.html">Comptabilité Finance</a>
-                        <a href="FilièreRGL.html">Réseaux Génie Logiciel</a>
-                        <a href="FilièreMA.html">Marketing Administration</a>
-                        <a href="FilièreRHC.html">Gestion des Ressources Humaines</a>
+                        <a href="../FilièresT-H.html">Tourisme et Hôtellerie</a>
+                        <a href="../FilièreCF.html">Comptabilité Finance</a>
+                        <a href="../FilièreRGL.html">Réseaux Génie Logiciel</a>
+                        <a href="../FilièreMA.html">Marketing</a>
+                        <a href="../FilièreRHC.html">Gestion des Ressources Humaines</a>
+                        <a href="../FilièreAD.html">Assistanat de Direction</a>
                     </div>
                 </li>
                 <li class="listes_deroulante">
@@ -124,9 +211,8 @@
                     </div>
                 </li>
                 <li class="listes_deroulante">
-                    <div>Campus</div>
+                    <span>Campus</span>
                     <div class="elements_deroulant">
-                        <a href="campus_Abidjan_Plateau.html">Campus Abidjan-Plateau</a>
                         <a href="campus_Abidjan_Yopougon.html">Campus Abidjan-Yopougon</a>
                         <a href="campus_Yamoussoukro.html">Campus Yamoussoukro</a>
                     </div>
@@ -139,11 +225,12 @@
             <h1>Découvrez Nos Campus</h1>
         </div>
         <div class="container">
-            <div class="">
+            <div class="campus_Abidjan_Plateau">
                 <h2 class="nom_campus">Campus Abidjan Plateau</h2>
-                <img src="" alt="  ">
-                <p>Pigier Plateau est situé au cœur du quartier du Plateau à Abidjan, en Côte d'Ivoire. <br>
-                     Plus précisément, l'adresse est l'intersection du Boulevard Clozel et de l'Avenue Marchand. Le campus est facilement accessible par les transports en commun et dispose d'une boîte postale à 01 BP 1585 Abidjan 01</p>
+                <p>PIGIER Côte d'Ivoire, situé au cœur du Plateau à Abidjan (3500 étudiants) et crée en 1956, est l'un des premiers établissements du réseau international 
+                    qui forme et encadre les étudiants aussi bien que les travailleurs. Cet établissement de renommée existe depuis 1956 en Côte d'Ivoire et le réseau mondial 
+                    a plus de 150 années d'existence. L'école a un campus à Yamoussoukro avec 1000 étudiants.<br><span>Adresse: Intersection du Boulevard Clozel et de l'Avenue Marchand, Abidjan, Côte d’Ivoire
+                        01 BP 1585 ABIDJAN 01 - PLATEAU</span> </p>
                 
             </div>
         </div>
@@ -167,7 +254,7 @@
                 <a href="" target="_blank"><img src="Images/logo_tik tok.png" alt="logo de Tik Tok" weight="80px" height="80px"></a>
             </div>
             <div>
-                <p>&copy; 2024 Pigier Côte d'Ivoire</p>
+                <p>&copy; 2025 - Tous droits réservés - Groupe 12</p>
             </div>
         </div>
     </footer>
