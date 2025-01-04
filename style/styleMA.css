@@ -248,18 +248,5 @@ body {
     padding-top: 70px;
 }
 
-/* Pour les petits écrans, adaptez le menu pour qu'il soit plus compact */
-@media (max-width: 768px) {
-    #navbar ul {
-        flex-direction: column;
-    }
 
-    #navbar ul li {
-        margin: 15px 0;
-    }
-
-    #navbar ul li a {
-        font-size: 1.5rem;
-    }
-}
 
